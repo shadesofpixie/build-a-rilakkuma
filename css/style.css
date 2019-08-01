@@ -1,0 +1,93 @@
+
+
+/* 
+    TheHugoDahl ----
+    you'll probably need to manage a few different ones, for example, 
+    to make sure eyes appear "on top" of the face, or mouth under 
+    mustache (as examples)
+
+
+    when in doubt, div it out
+
+*/
+
+
+.container-fluid {
+    margin: 0 auto;
+}
+
+.ui-widget-content {
+    border: none;
+}
+
+body {
+    background: url(../img/site-bg.jpg);
+}
+
+.logo {
+    margin-top: 10px;
+}
+
+/* Panel Styles */
+
+
+.side-panel, .middle-panel {
+    margin: 20px;
+}
+
+.side-panel {
+    background: #fcd5b0;
+    border: 2px solid #c89e9f;
+    border-radius: 5%;
+    width: 600px;
+    height: 800px;
+    
+}
+
+.middle-panel {
+    background: #fcd5b0;
+    border: 2px solid #c89e9f;
+    border-radius: 5%;
+    width: 700px;
+    height: 800px;
+
+}
+
+.face {
+    background: transparent;
+    width: 50%;
+    z-index: 2;
+    margin: 10px;
+}  
+
+.treats {
+    background: transparent;
+    width: 30%;
+    z-index: 3;
+    margin: 10px;
+}
+
+.onesie {
+    background: transparent;
+    width: 95%;
+    z-index: 2;
+    margin: 10px;
+}
+
+.bed {
+    background: transparent;
+    width: 50%;
+}
+
+.teacup {
+    background: transparent;
+    width: 50%;
+    z-index: 4; 
+}
+
+.rilakkuma {
+    background: transparent;
+    width: 40%;
+    z-index: 1;
+    margin: 10px;
+}
