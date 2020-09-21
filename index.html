@@ -1,72 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Build a Rilakkuma</title>
-    <link rel="icon" href="img/favicon.png">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-    <div class="container-fluid">
-
-        <div class="d-flex justify-content-center">
-            <img class="logo" src="img/logo.png" alt="">
-        </div>
-        
-
-        <div class="row d-flex justify-content-center">
-            <!-- Facial Expressions -->
-            <div class="col-xl-2 side-panel">
-
-                <img class="face ui-widget-content draggable" src="img/rilakkuma-face.png" alt="">
-                <img class="face ui-widget-content draggable" src="img/kiit.png" alt="">
-                <img class="face ui-widget-content draggable" src="img/korila-face.png" alt="">
-                <img class="face ui-widget-content draggable" src="img/rilakkuma-serious.png" alt="">
-                <img class="face ui-widget-content draggable" src="img/kiiro-mad.png" alt="">
-                <img class="face ui-widget-content draggable" src="img/korila-sleepy.png" alt="">
-                <img class="face ui-widget-content draggable" src="img/rilakkuma-scared.png" alt="">
-
-            </div>
-
-            <!-- Characters -->
-            <div class="col-xl-4 middle-panel">
-
-                <img class="rilakkuma ui-widget-content draggable" src="img/rilakkuma.png" alt="">
-                <img class="rilakkuma ui-widget-content draggable" src="img/korrila.png" alt="">
-                <img class="rilakkuma ui-widget-content draggable" src="img/kiiro.png" alt="">
-                <img class="bed ui-widget-content draggable" src="img/bed.png" alt="">
-
-            </div>
-
-            <!-- Assets -->
-            <div class="col-xl-2 side-panel">
-
-                <img class="treats ui-widget-content draggable" src="img/treat.png" alt="">
-                <img class="onesie ui-widget-content draggable" src="img/onesie.png" alt="">
-                <img class="treats ui-widget-content draggable" src="img/strawberry.png" alt="">
-                <img class="teacup ui-widget-content draggable" src="img/tea-cup.png" alt="">
-
-                
-            </div>
-        </div>
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <img class="logo" src="img/logo.png" alt="" />
+    <div class="app">
+      <div id="faces" class="item side-panel">
+        <!-- Facial Expressions -->
+        <img
+          class="face ui-widget-content draggable"
+          src="img/rilakkuma-face.png"
+          alt=""
+        />
+        <img
+          class="face ui-widget-content draggable"
+          src="img/kiit.png"
+          alt=""
+        />
+        <img
+          class="face ui-widget-content draggable"
+          src="img/korila-face.png"
+          alt=""
+        />
+        <img
+          class="face ui-widget-content draggable"
+          src="img/rilakkuma-serious.png"
+          alt=""
+        />
+        <img
+          class="face ui-widget-content draggable"
+          src="img/kiiro-mad.png"
+          alt=""
+        />
+        <img
+          class="face ui-widget-content draggable"
+          src="img/korila-sleepy.png"
+          alt=""
+        />
+        <img
+          class="face ui-widget-content draggable"
+          src="img/rilakkuma-scared.png"
+          alt=""
+        />
+        <!-- Characters -->
+        <img
+          class="rilakkuma ui-widget-content draggable"
+          src="img/rilakkuma.png"
+          alt=""
+        />
+        <img
+          class="rilakkuma ui-widget-content draggable"
+          src="img/korrila.png"
+          alt=""
+        />
+        <img
+          class="rilakkuma ui-widget-content draggable"
+          src="img/kiiro.png"
+          alt=""
+        />
+        <img class="bed ui-widget-content draggable" src="img/bed.png" alt="" />
+        <!-- Assets -->
+        <img
+          class="treats ui-widget-content draggable"
+          src="img/treat.png"
+          alt=""
+        />
+        <img
+          class="onesie ui-widget-content draggable"
+          src="img/onesie.png"
+          alt=""
+        />
+        <img
+          class="treats ui-widget-content draggable"
+          src="img/strawberry.png"
+          alt=""
+        />
+        <img
+          class="teacup ui-widget-content draggable"
+          src="img/tea-cup.png"
+          alt=""
+        />
+      </div>
+      <div class="middle-panel">Hello world</div>
     </div>
-
-   
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script
-    src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
-    integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
-    crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
-
-
-
