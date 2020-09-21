@@ -28,8 +28,11 @@ body {
     justify-content: space-around;
 }
 
+.draggable {
+    cursor: move;
+}
+
 /* Panel Styles */
-.face {}
 
 .side-panel,
 .middle-panel {
@@ -61,15 +64,15 @@ body {
 .face {
     position: relative;
     background: transparent;
-    width: 50%;
+    width: 200px;
     z-index: 2;
     margin: 10px;
 }
 
-.treats {
+.item {
     position: relative;
     background: transparent;
-    width: 30%;
+    width: 100px;
     z-index: 3;
     margin: 10px;
 }
@@ -77,27 +80,15 @@ body {
 .onesie {
     position: relative;
     background: transparent;
-    width: 50%;
+    width: 355px;
     z-index: 2;
     margin: 10px;
-}
-
-.bed {
-    background: transparent;
-    width: 50%;
-}
-
-.teacup {
-    position: relative;
-    background: transparent;
-    width: 50%;
-    z-index: 4;
 }
 
 .rilakkuma {
     position: relative;
     background: transparent;
-    width: 40%;
+    width: 350px;
     z-index: 1;
     margin: 10px;
 }
