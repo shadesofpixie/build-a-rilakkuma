@@ -1,5 +1,3 @@
-
-
 /* 
     TheHugoDahl ----
     you'll probably need to manage a few different ones, for example, 
@@ -10,84 +8,93 @@
     when in doubt, div it out
 
 */
-
-
-.container-fluid {
-    margin: 0 auto;
-}
-
 .ui-widget-content {
-    border: none;
+  border: none;
 }
 
 body {
-    background: url(../img/site-bg.jpg);
+  background: url(../img/site-bg.jpg);
 }
 
 .logo {
-    margin-top: 10px;
+  display: block;
+  margin: 10px auto 0 auto;
+}
+
+.app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.draggable {
+  cursor: move;
 }
 
 /* Panel Styles */
-
-
-.side-panel, .middle-panel {
-    margin: 20px;
+.side-panel,
+.middle-panel {
+  margin: 20px;
 }
 
 .side-panel {
-    background: #fcd5b0;
-    border: 2px solid #c89e9f;
-    border-radius: 5%;
-    width: 600px;
-    height: 800px;
-    
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fcd5b0;
+  border: 2px solid #c89e9f;
+  border-radius: 5%;
+  width: 600px;
+  height: 800px;
+  overflow-y: auto;
 }
 
 .middle-panel {
-    background: #fcd5b0;
-    border: 2px solid #c89e9f;
-    border-radius: 5%;
-    width: 700px;
-    height: 800px;
-
+  background: #fcd5b0;
+  border: 2px solid #c89e9f;
+  border-radius: 5%;
+  width: 700px;
+  height: 800px;
 }
 
 .face {
-    background: transparent;
-    width: 50%;
-    z-index: 2;
-    margin: 10px;
-}  
+  position: relative;
+  background: transparent;
+  width: 200px;
+  z-index: 2;
+  margin: 10px;
+}
 
-.treats {
-    background: transparent;
-    width: 30%;
-    z-index: 3;
-    margin: 10px;
+.item {
+  position: relative;
+  background: transparent;
+  width: 100px;
+  z-index: 3;
+  margin: 10px;
 }
 
 .onesie {
-    background: transparent;
-    width: 95%;
-    z-index: 2;
-    margin: 10px;
-}
-
-.bed {
-    background: transparent;
-    width: 50%;
-}
-
-.teacup {
-    background: transparent;
-    width: 50%;
-    z-index: 4; 
+  position: relative;
+  background: transparent;
+  width: 355px;
+  z-index: 2;
+  margin: 10px;
 }
 
 .rilakkuma {
-    background: transparent;
-    width: 40%;
-    z-index: 1;
-    margin: 10px;
+  position: relative;
+  background: transparent;
+  width: 350px;
+  z-index: 1;
+  margin: 10px;
 }
+/*# sourceMappingURL=style.css.map */
