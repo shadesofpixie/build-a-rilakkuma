@@ -1,3 +1,4 @@
+let draggableContainer = document.querySelector(".side-panel");
 let dragablesItems = document.querySelectorAll(".draggable");
 let currentItem;
 const moveItem = (x, y, elt) => {
@@ -9,8 +10,14 @@ const moveItem = (x, y, elt) => {
 //Event function
 
 const handleMove = (e) => {
-  console.log(e.target);
   moveItem(e.pageX, e.pageY, currentItem);
+};
+
+const handleMouseOver = (e) => {
+  if (currentItem) {
+    currentItem.style.position = "static";
+    draggableContainer.removeEventListener("mouseover", handleMouseOver, true);
+  }
 };
 
 //Manual Drag & Drop
@@ -21,10 +28,12 @@ dragablesItems.forEach((item) => {
   });
   item.addEventListener("mousedown", () => {
     currentItem = item;
+    item.style.position = "absolute";
     document.addEventListener("mousemove", handleMove);
   });
 
   item.addEventListener("mouseup", () => {
+    draggableContainer.addEventListener("mouseover", handleMouseOver, true);
     currentItem = null;
     document.removeEventListener("mousemove", handleMove);
     item.removeEventListener("mouseup", handleMove);
